@@ -1,0 +1,16 @@
+{
+  "name": "Travis teste",
+  "version": "0.0.1",
+  "description": "Lorem Ipsum",
+  "repository": {
+    "type": "git",
+  },
+  "author": "Ofelquis",
+  "devDependencies" : {
+    "grunt" : "~0.4.0",
+    "bower" : ">= 0.8.x"
+  },
+  "scripts" : {
+    "test" : "grunt travis"
+  }
+}
