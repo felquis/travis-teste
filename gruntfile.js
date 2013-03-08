@@ -3,28 +3,23 @@
   grunt.initConfig({
 
     // Meta informations
-    pkg: '<json:package.json>',
-    meta: {
-      banner: '/*\n' +
-        ' *  <%= pkg.title || pkg.name %> - v<%= pkg.version %>\n' +
-        ' *  <%= pkg.description %>\n' +
-        ' *  <%= pkg.homepage %>\n\n' +
-        ' *  Copyright (c) <%= grunt.template.today("yyyy") %>\n' +
-        ' *  MIT License\n' +
-        ' */'
-    },
-
-    // Lint definitions
-    lint: {
-      files: ['js/main.js']
-    },
+    pkg: grunt.file.readJSON('package.json'),
     jshint: {
+      // define the files to lint
+      files: ['js/main.js'],
+      // configure JSHint (documented at http://www.jshint.com/docs/)
       options: {
-        multistr: true
+        // more options here if you want to override JSHint defaults
+        globals: {
+          jQuery: true,
+          console: true,
+          module: true
+        }
       }
     }
   });
 
-  grunt.registerTask('default', 'lint');
-  grunt.registerTask('travis', 'lint');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+
+  grunt.registerTask('travis', 'jshint');
 };

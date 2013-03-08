@@ -1,16 +1,15 @@
 {
-  "name": "Travis teste",
+  "name": "travis-teste",
   "version": "0.0.1",
   "description": "Lorem Ipsum",
-  "repository": {
-    "type": "git",
-  },
   "author": "Ofelquis",
   "devDependencies" : {
     "grunt" : "~0.4.0",
-    "bower" : ">= 0.8.x"
+    "bower" : "0.8.x",
+    "grunt-contrib-jshint" : "0.2.x"
   },
   "scripts" : {
     "test" : "grunt travis"
-  }
+  },
+  "license": "MIT"
 }
