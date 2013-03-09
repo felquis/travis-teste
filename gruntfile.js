@@ -16,16 +16,13 @@
         strict: true,
 
         globals: {
-          jQuery: true,
-          console: true,
-          module: true
+          jQuery: true
         }
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  // grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', 'jshint');
   grunt.registerTask('travis', 'jshint');

@@ -1,3 +1,5 @@
 $(function () {
-	alert('hi!! :D'); 
+	"use strict";
+
+	alert('hi!! :D');
 });
