@@ -6,7 +6,8 @@
   "devDependencies" : {
     "grunt" : "~0.4.0",
     "bower" : "0.8.x",
-    "grunt-contrib-jshint" : "0.2.x"
+    "grunt-contrib-jshint" : "0.2.x",
+    "grunt-contrib-watch" : "0.2.x"
   },
   "scripts" : {
     "test" : "grunt travis"
