@@ -1,1 +1,1 @@
-## Um puta Teste
+## Um puta Teste [![Build Status](https://secure.travis-ci.org/felquis/travis-teste/builds.png?branch=master)](http://travis-ci.org/felquis/travis-teste/builds)
