@@ -12,7 +12,7 @@
         // more options here if you want to override JSHint defaults
 
         laxcomma: true,
-        trailing: true,
+        trailing: true,...
         strict: true,
 
         globals: {
